@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: url('assets/Background.png');
+    background-size: cover;
+}
+
+:root {
+    --gray-01: #D6D6F2;
+    --gray-02: #E2E2F5;
+    --purple: #BF7BFB;
+    --blue-light: #212187;
+    --blue: #151557;
+    --blue-dark: #000013;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .item {
+    display: flex;
+    justify-content: center;
+}
+
+.container .item:first-of-type {
+    width: 35%;
+    align-items: left;
+    flex-direction: column;
+}
+
+.container .item:last-of-type {
+    width: 50%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.container .item:first-of-type h1 {
+    color: var(--gray-01);
+    font-size: 40px;
+    padding: 10px 70px 20px 0;
+}
+
+.container .item:first-of-type p {
+    color: var(--gray-02);
+    font-weight: 200;
+    font-size: 22px;
+    padding: 10px 0 20px 0;
+}
+
+.container .item:first-of-type .btns {
+    padding: 30px 0;
+}
+
+.btns button {
+    background: var(--blue);
+    color: var(--gray-01);
+    text-transform: uppercase;
+    border-radius: 40px;
+    padding: 13px 25px;
+    font-size: 14px;
+    transition: .4s ease-in;
+}
+
+
+.btns button:hover {
+    background: var(--blue-light);
+    cursor: pointer;
+}
+
+.btns button:first-of-type {
+    margin: 0 15px 0 0;
+}
+
+.container .item:last-of-type img {
+    filter: drop-shadow(0px 0px 50px #7000ffb3);    
+}
+
+iframe.moon-dancer {
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 50px #6f00ff75);
+}
